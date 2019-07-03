@@ -7,10 +7,11 @@ class Abc:
     def __repr__(self):
         return 'class representation '
     def __add__(self, other):
-        print('addition method ')
-        return other
+        print(other)
+        print('addition method ',self)
+        return other + self.u
 obj1 = Abc('amir')
 obj2 = Abc('mandeep')
 obj3 = Abc('Neeraj')
 # print('ui ' + obj)
-print(obj1+obj2+obj3)
+print(obj1+obj2)
