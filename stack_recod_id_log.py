@@ -21,6 +21,8 @@ class E_commerce:
             return self.order[i]
         else:
             return None
+    def __str__(self):
+        return str(self.order)
 
 customer = E_commerce()
 
@@ -29,6 +31,7 @@ customer.record('330334232')
 customer.record('00202d334232')
 customer.record('12sdd33433322')
 print(customer.get_last(3))
+print(customer)
 
 
 
