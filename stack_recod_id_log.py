@@ -30,8 +30,11 @@ customer.record('12sdd334232')
 customer.record('330334232')
 customer.record('00202d334232')
 customer.record('12sdd33433322')
+
 print(customer.get_last(3))
 print(customer)
+
+
 
 
 
