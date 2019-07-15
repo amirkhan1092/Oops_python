@@ -10,9 +10,9 @@
 
 def func():
     name = 'mandeep'
-    def closure():
+    def wrapper():
         print(name)
-    return closure
+    return wrapper
 # A Closure is a function object that remembers values in enclosing scopes even if they are not present in memory.
 f = func()
 f()
