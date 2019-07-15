@@ -8,6 +8,26 @@
 # A closure—unlike a plain function—allows the function to access those captured variables through the closure’s
 # copies of their values or references, even when the function is invoked outside their scope
 
+def func():
+    name = 'mandeep'
+    def closure():
+        print(name)
+    return closure
+# A Closure is a function object that remembers values in enclosing scopes even if they are not present in memory.
+f = func()
+f()
+f()
+f()
+
+
+
+
+
+
+
+
+'''
+
 import logging
 
 logging.basicConfig(filename='example.log', level=logging.INFO)
@@ -39,3 +59,4 @@ add_logger(4, 5)
 
 sub_logger(10, 5)
 sub_logger(20, 10)
+'''
