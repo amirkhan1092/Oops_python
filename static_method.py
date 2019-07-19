@@ -9,8 +9,10 @@ class Employee:
     def independent(value):
         print('value receiving from user ', value)
         return value+34
+        Employee.pay = 0
 
 
 emp1 = Employee('vinay',3433)
 print(emp1.independent(89))
+emp1.print_data()
 
