@@ -1,4 +1,5 @@
 class Employee:
+    pay = 9
     def __init__(self, name, pay):
         self.name = name
         self.pay = pay
@@ -8,8 +9,11 @@ class Employee:
     @staticmethod
     def independent(value):
         print('value receiving from user ', value)
-        return value+34
+        print(Employee.pay)
         Employee.pay = 0
+
+        return value+34
+
 
 
 emp1 = Employee('vinay',3433)
